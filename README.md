@@ -76,6 +76,22 @@ y_pred = model.predict(X_test)
 
 ## Section 9: Evaluate the Model
 This section evaluates the model's performance:
- - It calculates and prints the accuracy score.
- - It generates a classification report showing precision, recall, and f1-score.
- - A confusion matrix is created and visualized using seaborn to understand the model’s predictions versus actual outcomes.
+- It calculates and prints the accuracy score.
+- It generates a classification report showing precision, recall, and f1-score.
+- A confusion matrix is created and visualized using seaborn to understand the model’s predictions versus actual outcomes.
+```python
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy * 100:.2f}%')
+```
+
+**accuracy**
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/accuracy.PNG)
+
+```python
+# Display Classification Report
+print(classification_report(y_test, y_pred))
+```
+**classification report**
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/classification%20report.PNG)
