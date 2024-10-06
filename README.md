@@ -59,3 +59,13 @@ The dataset is split into training and testing sets using an 80/20 split.
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
+## Section 7: Create KNN Model
+A KNN classifier is instantiated with *n_neighbors=3*, and the model is trained using the training dataset.
+```python
+model = KNeighborsClassifier(n_neighbors=3)
+model.fit(X_train, y_train)
+```
+
+**KNN model**
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/KNN%20model.PNG)
