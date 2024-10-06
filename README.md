@@ -16,3 +16,16 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+## Section 2: Load Dataset
+Here, the code loads a dataset named *FP_DATASET_Fullcut2.csv* into a DataFrame using pandas.
+```python
+df = pd.read_csv('FP_DATASET_Fullcut2.csv')
+```
+## Section 3: Check the Initial Data Overview
+This part provides an overview of the dataset:
+- *The df.info()* command displays the structure, including data types and non-null counts.
+- *The df.describe()* command provides statistical summaries of numerical features.
+```python
+print(df.info())
+print(df.describe())
+```
