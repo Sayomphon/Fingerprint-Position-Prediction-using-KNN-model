@@ -30,3 +30,5 @@ print(df.info())
 print(df.describe())
 ```
 ![Result](https://github.com/Sayomphon/Weather-forecast-model/blob/main/Prediction%20result.PNG)
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/df.PNG)
