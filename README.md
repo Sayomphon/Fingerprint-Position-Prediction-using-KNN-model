@@ -53,4 +53,9 @@ Here, the code separates the features (independent variables) from the target va
 X = df.drop('TARGET', axis=1)
 y = df['TARGET']
 ```
-
+## Section 6: Split the Data
+The dataset is split into training and testing sets using an 80/20 split.
+- *train_test_split()* from sklearn randomly divides the data while allowing for reproducibility using a *random_state*.
+```python
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
