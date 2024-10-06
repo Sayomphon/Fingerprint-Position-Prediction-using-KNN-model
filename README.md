@@ -65,7 +65,17 @@ A KNN classifier is instantiated with *n_neighbors=3*, and the model is trained 
 model = KNeighborsClassifier(n_neighbors=3)
 model.fit(X_train, y_train)
 ```
-
+## Section 8: Make Predictions
+Predictions are made on the test dataset using the trained KNN model.
+```python
+y_pred = model.predict(X_test)
+```
 **KNN model**
 
 ![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/KNN%20model.PNG)
+
+## Section 9: Evaluate the Model
+This section evaluates the model's performance:
+ - It calculates and prints the accuracy score.
+ - It generates a classification report showing precision, recall, and f1-score.
+ - A confusion matrix is created and visualized using seaborn to understand the model’s predictions versus actual outcomes.
