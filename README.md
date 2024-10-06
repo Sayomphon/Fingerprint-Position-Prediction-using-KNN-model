@@ -47,11 +47,13 @@ In this segment, the code checks for any missing values in the dataset using *df
 ```python
 # Check for missing values
 print(df.isnull().sum())
-# Replace missing values (example: using mean)
-df.fillna(df.mean(), inplace=True)
 ```
 ![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/dfisnull.PNG)
 
+```python
+# Replace missing values (example: using mean)
+df.fillna(df.mean(), inplace=True)
+```
 ## Section 5: Separate Features and Target Variable
 Here, the code separates the features (independent variables) from the target variable (dependent variable).
 - *X* contains all the columns except the target, which is denoted by 'TARGET', and *y* contains the 'TARGET' column.
