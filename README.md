@@ -95,3 +95,44 @@ print(classification_report(y_test, y_pred))
 **classification report**
 
 ![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/classification%20report.PNG)
+
+```python
+# Display Confusion Matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+plt.figure(figsize=(10,7))
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=np.unique(y), yticklabels=np.unique(y))
+plt.ylabel('Actual')
+plt.xlabel('Predicted')
+plt.title('Confusion Matrix')
+plt.show()
+```
+**confusion matrix**
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/confusion%20matrix.PNG)
+
+## Section 10: Test Different Values of K
+In this final step, the code evaluates the model performance across different values of K (1 to 20):
+- An accuracy list is created to capture the performance for each K value.
+- A line plot visualizes accuracy against the number of neighbors, helping to identify the optimal K value.
+```python
+accuracy_list = []
+k_values = range(1, 21)
+
+for k in k_values:
+    model = KNeighborsClassifier(n_neighbors=k)
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    accuracy_list.append(accuracy_score(y_test, y_pred))
+
+# Display the accuracy vs K Value graph
+plt.figure(figsize=(10, 6))
+plt.plot(k_values, [acc * 100 for acc in accuracy_list], marker='o')
+plt.xticks(k_values)
+plt.xlabel('Number of Neighbors K')
+plt.ylabel('Accuracy (%)')
+plt.title('Accuracy vs K Value')
+plt.show()
+```
+**Values K**
+
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/Values%20K.PNG)
