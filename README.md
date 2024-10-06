@@ -33,14 +33,6 @@ print(df.describe())
 
 ![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/df.PNG)
 
-**df.info**
-
-![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/dfinfo.PNG)
-
-**df-describe**
-
-![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/dfdescribe.PNG)
-
 ## Section 4: Handle Missing Values
 In this segment, the code checks for any missing values in the dataset using *df.isnull().sum()*.
 - It then fills those missing values with the mean of their respective columns to ensure that the model can be trained without issues caused by missing data.
