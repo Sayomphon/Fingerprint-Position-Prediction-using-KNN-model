@@ -1,4 +1,4 @@
-# Fingerprint-Position-Prediction-using-KNN-model
+# Fingerprint Position Prediction using KNN-model
 
 The code imports necessary libraries for data manipulation, modeling, and visualization. It loads a dataset, checks for missing values, and replaces them with the mean. The data is then split into training and testing sets, and a K-Nearest Neighbors (KNN) model is created and trained. Predictions are made on the test set, and the model's performance is evaluated using accuracy, a classification report, and a confusion matrix. Lastly, it tests different values of K to find the optimal number of neighbors for the KNN algorithm.
 
@@ -29,3 +29,4 @@ This part provides an overview of the dataset:
 print(df.info())
 print(df.describe())
 ```
+![Result](https://github.com/Sayomphon/Weather-forecast-model/blob/main/Prediction%20result.PNG)
