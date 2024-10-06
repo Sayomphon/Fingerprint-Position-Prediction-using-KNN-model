@@ -29,6 +29,9 @@ This part provides an overview of the dataset:
 print(df.info())
 print(df.describe())
 ```
-![Result](https://github.com/Sayomphon/Weather-forecast-model/blob/main/Prediction%20result.PNG)
-
+**df**
 ![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/df.PNG)
+**df.info**
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/dfinfo.PNG)
+**df-describe**
+![Result](https://github.com/Sayomphon/Fingerprint-Position-Prediction-using-KNN-model/blob/main/dfdescribe.PNG)
